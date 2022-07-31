@@ -1,19 +1,23 @@
 {
   "server": "hub-cloud.browserstack.com",
-  "username": "felixwong_iLGgP9",
-  "access_key": "GW4yuGs4gTT3a9Zn22rJ",
+  "username": "BROWSERSTACK_USERNAME",
+  "access_key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
     "project": "First TestNg Android Project",
     "build": "browserstack-build-1",
-    "name": "first_test",
+    "name": "parallel_test",
     "browserstack.debug": true,
-    "app": "bs://97b19476dca74db5f7d64cdbfc80d062d96a8e3d"
+    "app": "bs://<app-id>"
   },
 
   "environments": [
-    { 
+    {
       "device": "Google Pixel 3",
+      "os_version": "9.0"
+    },
+    {
+      "device": "Samsung Galaxy S10e",
       "os_version": "9.0"
     }
   ]
